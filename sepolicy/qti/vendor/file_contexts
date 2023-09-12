@@ -15,6 +15,7 @@
 /(odm|vendor/odm)/lib64/libAlgoInterface\.so                                                                                         u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAlgoProcess\.so                                                                                           u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAncSegBaseSdk\.so                                                                                         u:object_r:same_process_hal_file:s0
+/(odm|vendor/odm)/lib64/libFaceWhiten\.so                                                                                           u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAncSegmentSdk\.so                                                                                         u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAncHumanSegFigureFusion\.so                                                                               u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAncHumanRetain\.so                                                                                        u:object_r:same_process_hal_file:s0
@@ -42,6 +43,7 @@
 /(odm|vendor/odm)/lib64/libarcsoft_high_dynamic_range_v4\.so                                                                         u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libarcsoft_high_dynamic_range_couple_v4\.so                                                                  u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libarcsoft_high_dynamic_range_couple_V2\.so                                                                  u:object_r:same_process_hal_file:s0
+/(odm|vendor/odm)/lib64/libarcsoft_hta.so                                                                 u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libarcsoft_high_dynamic_range_couple\.so                                                                     u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libarcsoft_preview_antibanding\.so                                                                           u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libarcsoft_super_night_raw\.so                                                                               u:object_r:same_process_hal_file:s0
