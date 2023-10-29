@@ -10,7 +10,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.hardware.input.InputManager
 import android.media.AudioManager
 import android.media.AudioSystem
 import android.os.VibrationEffect
@@ -25,10 +24,9 @@ import java.lang.Thread
 import java.util.concurrent.Executors
 
 class KeyHandler(context: Context) : DeviceKeyHandler {
-    private val audioManager = context.getSystemService(AudioManager::class.java)
-    private val inputManager = context.getSystemService(InputManager::class.java)
-    private val notificationManager = context.getSystemService(NotificationManager::class.java)
-    private val vibrator = context.getSystemService(Vibrator::class.java)
+    private val audioManager = context.getSystemService(AudioManager::class.java)!!
+    private val notificationManager = context.getSystemService(NotificationManager::class.java)!!
+    private val vibrator = context.getSystemService(Vibrator::class.java)!!
 
     private val packageContext = context.createPackageContext(
         KeyHandler::class.java.getPackage()!!.name, 0
@@ -64,7 +62,9 @@ class KeyHandler(context: Context) : DeviceKeyHandler {
             return event
         }
 
-        if (inputManager.getInputDevice(event.deviceId).name != "oplus,hall_tri_state_key") {
+        val deviceName = event.device.name
+
+        if (deviceName != "oplus,hall_tri_state_key" && deviceName != "oplus,tri-state-key") {
             return event
         }
 
